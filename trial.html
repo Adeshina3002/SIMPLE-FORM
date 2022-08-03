@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./trial.css">
+    <title>SURVEY FORM</title>
+  </head>
+  <body>
+    <main>
+      <header id="header-text">
+        <h1 class="title">Survey Form</h1>
+        <p class="description">
+          Thank You For Taking Your Time To Give Us FeedBack
+        </p>
+      </header>
+      <form id="survey-form">
+        <div class="form-group">
+          <label for="name" class="name-label">Name</label>
+          <div>
+            <input
+            type="text"
+            name="name"
+            id="name"
+            required
+            placeholder="Enter Your Name"
+          />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="email" class="email-label">Email</label>
+          <div>
+            <input
+            type="email"
+            name="email"
+            id="email"
+            required
+            placeholder="Enter Your Email"
+          />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="age">Age</label>
+          <div>
+            <input
+            type="number"
+            name="age"
+            id="age"
+            min="1"
+            max="99"
+            required
+            placeholder="Enter Your Age"
+          />
+          </div>
+        </div>
+
+        <div class="form-group-role">
+          <label for="profession">Choose A Role That Best Describes You</label>
+          <div>
+            <select name="profession" id="profession"  required>
+                <option selected disabled value>Select Your Role</option>
+                <option class="student" value="student">Student</option>
+                <option class="full-time" value="full-time-job">
+                  Full Time Job
+                </option>
+                <option class="part-time" value="part-time-job">
+                  Part Time Job
+                </option>
+                <option class="prefer-not" value="prefer-to-not-say">
+                  Prefer Not To Say
+                </option>
+                <option class="other" value="other">Other</option>
+              </select>
+          </div>
+          
+        </div>
+
+        <div class="form-group">
+          
+            <label for="rating"
+              >Would You Recommend Our Product To A Friend ?</label
+            >
+            <div>
+            <input type="radio" name="rating" id="rating" value="never" /><label for="never"
+              >Never</label
+            >
+          </div>
+
+          <div>
+            <input type="radio" name="rating" id="rating" value="may-be" /><label for="may-be"
+              >May Be</label
+            >
+          </div>
+
+          <div>
+            <input type="radio" name="rating" id="rating" value="likely"/><label for="likely"
+              >Likely</label
+            >
+          </div>
+
+          <div>
+            <input type="radio" name="rating" id="rating" value="definitely" /><label for="definitely"
+              >Definitely</label
+            >
+          </div>
+        </div>
+
+        <div class="form-group">
+            <label for="product">Select Things That You Liked About Our Product</label>
+
+            <div>
+                <input type="checkbox" name="product" id="product" value="ui"><label for="ui">UI</label>
+            </div>
+
+            <div>
+                <input type="checkbox" name="product" id="product" value="features"><label for="features">Features</label>
+            </div>
+
+            <div>
+                <input type="checkbox" name="product" id="product" value="service"><label for="service">Service</label>
+            </div>
+
+            <div>
+                <input type="checkbox" name="product" id="product" value="simpleness"><label for="simpleness">Simpleness</label>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="remarks">Remarks</label>
+            <div>
+                <textarea name="remarks" id="remarks" cols="30" rows="10" placeholder="Please Tell Us How We Can Improve"></textarea>
+            </div>
+            
+        </div>
+
+        <div>
+            <button type="submit">Submit</button>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
